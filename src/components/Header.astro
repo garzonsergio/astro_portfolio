@@ -1,5 +1,5 @@
 ---
-
+import HeaderButton from "./HeaderButton.astro";
 ---
 
 <header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6:">
@@ -14,8 +14,66 @@
     <nav
       class="flex flex-col items-center justify-between w-full text-center md:flex-row"
     >
-      <a class="text-white" href="/">Last projects</a>
-      <a class="text-white" href="/first">First projects</a>
+      <HeaderButton class="text-white" href="/">
+        <svg
+          slot="before"
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-jetpack"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+            d="M10 6a3 3 0 1 0 -6 0v7h6v-7z"></path><path
+            d="M14 13h6v-7a3 3 0 0 0 -6 0v7z"></path><path
+            d="M5 16c0 2.333 .667 4 2 5c1.333 -1 2 -2.667 2 -5"></path><path
+            d="M15 16c0 2.333 .667 4 2 5c1.333 -1 2 -2.667 2 -5"></path><path
+            d="M10 8h4"></path><path d="M10 11h4"></path></svg
+        >Last projects
+      </HeaderButton>
+      <HeaderButton class="text-white" href="/about">
+        <svg
+          slot="before"
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-info-hexagon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+            d="M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z"
+          ></path><path d="M12 9h.01"></path><path d="M11 12h1v4h1"></path></svg
+        >About Dev
+      </HeaderButton>
+
+      <HeaderButton class="text-white" href="/first">
+        <svg
+          slot="before"
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-clock-code"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+            d="M20.931 13.111a9 9 0 1 0 -9.453 7.874"></path><path
+            d="M20 21l2 -2l-2 -2"></path><path d="M17 17l-2 2l2 2"></path><path
+            d="M12 7v5l2 2"></path></svg
+        >
+        First projects
+      </HeaderButton>
     </nav>
   </div>
 </header>
